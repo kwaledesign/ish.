@@ -209,8 +209,8 @@ body {
   color: gray;
   padding: 0.8em 0.95em; }
   .sg-current-size:hover .sg-input {
-    background: #f7f7f7;
-    color: #000; }
+    /*background: #f7f7f7;
+    color: #000;*/ }
   @media all and (min-width: 45em) {
     .sg-current-size {
       float: left; } }
