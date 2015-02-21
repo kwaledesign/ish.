@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="styles.css" media="all" />
 </head>
 <body>
-<?php //Get URL Parameter
-	$src = (empty($_GET['url'])) ? 'http://bradfrostweb.com/blog/post/ish-2-0/' : addslashes(filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL));
-?>
 <header class="sg-header" role="banner">
 	<div class="nav url-change">
 		<form method="get" action="" id="url-form">
 			<label for="url" id="url-toggle" class="url-toggle">URL</label>
-		     <input id="url" type="text" name="url" placeholder="Enter any URL" value="<?php echo $src; ?>" />
+		     <input id="url" type="text" name="url" placeholder="Enter any URL" value="localhost:3000" />
 		     <button id="url-submit">Go</button>
 		  </form>
 	</div>
@@ -47,7 +44,7 @@
 <div id="sg-vp-wrap">
 	<div id="sg-cover"></div>
 	<div id="sg-gen-container">
-		<iframe id="sg-viewport" src="<?php echo $src; ?>" sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
+		<iframe id="sg-viewport" src="localhost:3000" sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
 		<div id="sg-rightpull-container">
 			<div id="sg-rightpull"></div>
 		</div>
